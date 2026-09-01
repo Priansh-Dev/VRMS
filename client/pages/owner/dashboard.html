@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Owner Dashboard - VRMS</title>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <a href="/owner/dashboard" class="logo">VRMS Owner</a>
+      <nav class="nav-links">
+        <a href="/owner/vehicles">My Vehicles</a>
+        <a href="/owner/bookings">Bookings</a>
+        <button id="logoutBtn" class="btn btn-outline">Logout</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="dashboard">
+    <div class="container">
+      <h1>Owner Dashboard</h1>
+      <p>Welcome! Manage your vehicles and bookings here.</p>
+      <div class="card" style="margin-top: 2rem;">
+        <div class="card-body">
+          <h3>Quick Actions</h3>
+          <a href="/owner/vehicles/create" class="btn btn-primary">Add New Vehicle</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="/js/utils.js"></script>
+  <script src="/js/api.js"></script>
+  <script src="/js/auth.js"></script>
+  <script src="/js/pages/owner/dashboard.js"></script>
+</body>
+</html>

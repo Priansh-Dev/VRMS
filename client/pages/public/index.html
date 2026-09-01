@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VRMS - Vehicle Rental Management System</title>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <a href="/" class="logo">VRMS</a>
+      <nav class="nav-links">
+        <a href="/login">Login</a>
+        <a href="/register" class="btn btn-primary">Register</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Vehicle Rental Management System</h1>
+        <p class="lead">Rent vehicles securely with verified owners and seamless booking</p>
+        <div class="hero-actions">
+          <a href="/register?role=customer" class="btn btn-primary btn-lg">Rent a Vehicle</a>
+          <a href="/register?role=owner" class="btn btn-secondary btn-lg">List Your Vehicle</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container">
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h3>Verified Vehicles</h3>
+            <p>All vehicles undergo admin verification of RC, Owner ID, and Number Plate</p>
+          </div>
+          <div class="feature-card">
+            <h3>Secure Payments</h3>
+            <p>Razorpay test-mode payments with server-side verification</p>
+          </div>
+          <div class="feature-card">
+            <h3>Transparent Pricing</h3>
+            <p>Hourly rates set by owners, calculated automatically by backend</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 VRMS - Vehicle Rental Management System</p>
+    </div>
+  </footer>
+
+  <script src="/js/utils.js"></script>
+  <script src="/js/api.js"></script>
+  <script src="/js/auth.js"></script>
+</body>
+</html>

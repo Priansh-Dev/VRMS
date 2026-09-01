@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - VRMS</title>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <a href="/" class="logo">VRMS</a>
+    </div>
+  </header>
+
+  <main class="auth-page">
+    <div class="container">
+      <div class="auth-card">
+        <h1>Register</h1>
+        <form id="registerForm" class="form">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label for="phone">Mobile Number</label>
+            <input type="tel" id="phone" name="phone" required placeholder="+91XXXXXXXXXX" autocomplete="tel">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required minlength="8" autocomplete="new-password">
+            <small class="form-hint">Minimum 8 characters</small>
+          </div>
+          <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required autocomplete="new-password">
+          </div>
+          <div class="form-group">
+            <label for="role">Register as</label>
+            <select id="role" name="role" required>
+              <option value="">Select role</option>
+              <option value="CUSTOMER">Customer (Rent vehicles)</option>
+              <option value="OWNER">Vehicle Owner (List vehicles)</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Register</button>
+        </form>
+        <p class="auth-footer">
+          Already have an account? <a href="/login">Login</a>
+        </p>
+        <div id="errorContainer" class="alert alert-error hidden"></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="/js/utils.js"></script>
+  <script src="/js/api.js"></script>
+  <script src="/js/auth.js"></script>
+  <script src="/js/pages/public/register.js"></script>
+</body>
+</html>
